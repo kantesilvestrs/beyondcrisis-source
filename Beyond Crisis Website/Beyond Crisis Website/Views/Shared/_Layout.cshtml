@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Movie">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+    <title>@ViewBag.Title</title>
+    <meta name="@ViewBag.Title" />
+    <meta name="description" content="Beyond Crisis is a made-in-Canada documentary film that takes the greatest challenge of our time and turns it on its head to explore how it is also, paradoxically, our greatest opportunity. Rising temperatures, rising carbon pollution and rising climate change impacts pose a massive challenge to our societies, and human well-being: but smart action can move us beyond crisis." />
+    <meta name="keywords" lang="Beyond Crisis Film, People's Climate March, PCM, Kai Reimer-Watts, Ray Kocur, Amanda Hunter, Yasmin Parodi, Monica Resendees" />
+
+
+    <!-- Twitter Card Data -->
+    <meta name="twitter:card" value="summary" />
+
+    <!-- Open Graph DAta -->
+    <meta property="og:title" content="@ViewBag.Title" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.beyondcrisisfilm.com/" />
+    <meta property="og:image" content="http://www.beyondcrisisfilm.com/content/client/img/beyond_crisis_logo.jpg" />
+    <meta property="og:description" content="Beyond Crisis is a made-in-Canada documentary film that takes the greatest challenge of our time and turns it on its head to explore how it is also, paradoxically, our greatest opportunity. Rising temperatures, rising carbon pollution and rising climate change impacts pose a massive challenge to our societies, and human well-being: but smart action can move us beyond crisis." />
+    <meta property="og:site_name" content="Beyond Crisis Film">
+    <meta itemprop="name" content="Beyond Crisis Film - Official Film Site">
+    <meta itemprop="image" content="http://www.beyondcrisisfilm.com/content/client/img/beyond_crisis_logo.jpg">
+
+
+
+    @*<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css' />*@
+    <link rel="icon" href="~/Content/client/img/favicon_32x32.png" type="image/png" />
+    @Styles.Render("~/client/css")
+</head>
+<body>
+    <div id="view-port">
+        @RenderBody()
+    </div>
+
+
+    @Scripts.Render("~/client/js")
+
+    @*<script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>*@
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-61034910-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

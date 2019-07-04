@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "Beyond Crisis Film";
+}
+
+<div id="social-link-wrap">
+    <div class="social-link-container">
+        <ul>
+            <li>
+                <a href="mailto:info@beyondcrisisfilm.ca" target="_self" class="social-link social-link-hover">
+                    <div class="email-hover asset">
+                        <div class="info-baloon">
+                            <img src="~/Content/map/assets/facesofclimate/img/baloon_tail.png" alt="" class="tail" />
+                            <div class="content">
+                                <p class="text">info@beyondcrisisfilm.ca</p>
+                            </div>
+                        </div>
+                        <img src="~/Content/map/assets/base/img/contact_icon_smaller.png" alt="Hello Beyond Crisis!" class="base-img" />
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/beyondcrisismovie" class="facebook social-link">
+                    <img src="~/Content/map/assets/base/img/fac.png" alt="Beyond Crisis Facebook" class="base-img" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://twitter.com/beyondcrisispcm" class="twitter social-link">
+                    <img src="~/Content/map/assets/base/img/twit.png" alt="Beyond Crisis Twitter" class="base-img" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://instagram.com/beyondcrisisfilm/" class="instagram social-link">
+                    <img src="~/Content/map/assets/base/img/insta.png" alt="Beyond Crisis Instagram" class="base-img" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.indiegogo.com/projects/beyond-crisis-film/" target="_blank" class="social-link social-link-hover">
+                    <div class="camera-donations asset">
+                        <div class="info-baloon">
+                            <img src="~/Content/map/assets/facesofclimate/img/baloon_tail.png" alt="" class="tail" />
+                            <div class="content">
+                                <p class="text">
+                                    For highlights from our crowd funding campaign, including a more detailed film description, visit
+                                </p>
+                                <p class="link">
+                                    www.IGG.me/at/Beyond-Crisis-Film
+                                </p>
+                            </div>
+                        </div>
+                        <img src="~/Content/map/assets/base/img/Indiegogo_icon_40x42.png" alt="Beyond Crisis Indigogo" class="base-img" />
+                    </div>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<div id="map-base-panel-wrap">
+    <div id="map-base-panel-container">
+        <div id="center-title-panel-wrap">
+            <div class="center-title-panel-container">
+                @* Beyond Crisis Title *@
+                <div class="beyondcrisis-title">
+                    <div class="base-img"></div>
+                </div>
+
+                @* Ian *@
+                @*<div class="ian-boy">
+                        <div class="base-img"></div>
+                    </div>*@
+
+                @* Tree stump *@
+                @*<div class="tree-stump">
+                        <div class="base-img"></div>
+                    </div>*@
+
+                @* Let's get smart on climate *@
+                <div class="lets-get-smart-on-climate">
+                    <div class="base-img"></div>
+                </div>
+
+                @* Trailer TV Set *@
+                @*<div class="trailer-tv-set">
+                        <div class="base-img"></div>
+                    </div>*@
+            </div>
+        </div>
+
+        @* Smart On Climate - Smart Urban City *@
+        @{ Html.RenderPartial("~/Views/Home/PW_Cities/SmartOnClimate.cshtml"); }
+        @* Our Story - New York City *@
+        @{ Html.RenderPartial("~/Views/Home/PW_Cities/OurStory.cshtml"); }
+        @* Credits - Toronto City *@
+        @{ Html.RenderPartial("~/Views/Home/PW_Cities/Credits.cshtml"); }
+        @* Faces Of Climate - Social Links *@
+        @{ Html.RenderPartial("~/Views/Home/PW_Cities/FacesOfClimate.cshtml"); }
+    </div>
+</div>
+
+@{ Html.RenderPartial("~/Views/Home/Other/VideoStrip.cshtml"); }
+
+@{ Html.RenderPartial("~/Views/Home/Other/Credits_SidePanel.cshtml"); }
+
+@{ Html.RenderPartial("~/Views/Home/Other/SmartOnClimate_SidePanel.cshtml"); }
+
+@{ Html.RenderPartial("~/Views/Home/Other/OurStory_SidePanel.cshtml"); }
+
+@{ Html.RenderPartial("~/Views/Home/Other/LoadingScreen.cshtml"); }
